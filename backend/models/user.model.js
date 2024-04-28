@@ -1,7 +1,7 @@
 // Objective: Define a Mongoose schema for a user and create a corresponding model.
 
 // Importing the mongoose library, which provides tools for interacting with MongoDB.
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 // Defining the schema for a user.
 const userSchema = new mongoose.Schema({        

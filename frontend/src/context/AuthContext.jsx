@@ -1,16 +1,22 @@
-import React from 'react'
-import { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from 'react';
 
+// Creating a context for authentication data.
 export const AuthContext = createContext();
 
-// eslint-disable-next-line react-refresh/only-export-components
+// Custom hook to use the authentication context.
 export const useAuthContext = () => {
-	return useContext(AuthContext);
+    return useContext(AuthContext);
 };
 
-
+// AuthContextProvider component to provide authentication data to its children.
 export const AuthContextProvider = ({ children }) => {
-	const [authUser, setAuthUser] = useState(JSON.parse(localStorage.getItem("chat-user")) || null);
+    // State to store the authenticated user data.
+    const [authUser, setAuthUser] = useState(JSON.parse(localStorage.getItem("chat-user")) || null);
 
-	return <AuthContext.Provider value={{ authUser, setAuthUser }}>{children}</AuthContext.Provider>;
+    // Providing the authUser state and setAuthUser function to the context.
+    return (
+        <AuthContext.Provider value={{ authUser, setAuthUser }}>
+            {children}
+        </AuthContext.Provider>
+    );
 };

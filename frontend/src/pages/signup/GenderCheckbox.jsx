@@ -1,12 +1,15 @@
 import React from 'react';
 
+// GenderCheckbox component handles the selection of gender using checkboxes.
 const GenderCheckbox = ({ onCheckboxChange, selectedGender }) => {
+  // Function to handle checkbox change.
   const handleCheckboxChange = (gender) => {
     onCheckboxChange(gender);
   };
 
   return (
     <div className="flex">
+      {/* Checkbox for Male */}
       <div className="form-control">
         <label
           className={`label gap-2 cursor-pointer ${
@@ -22,6 +25,7 @@ const GenderCheckbox = ({ onCheckboxChange, selectedGender }) => {
           />
         </label>
       </div>
+      {/* Checkbox for Female */}
       <div className="form-control">
         <label
           className={`label gap-2 cursor-pointer ${
@@ -42,27 +46,3 @@ const GenderCheckbox = ({ onCheckboxChange, selectedGender }) => {
 };
 
 export default GenderCheckbox;
-
-// import React from 'react';
-
-// const GenderCheckbox = () => {
-//   return (
-//     <div className='flex'>
-//       <div className='form-control'> 
-//         <label className='label gap-2 cursor-pointer'> 
-//           <span className='label-text text-gray-600'>Male</span>
-//           <input type="checkbox" className="checkbox border-slate-900" id="maleCheckbox" />
-//         </label>
-//       </div>
-      
-//       <div className='form-control'> 
-//         <label className='label gap-2 cursor-pointer'> 
-//           <span className='label-text text-gray-600'>Female</span>
-//           <input type="checkbox" className="checkbox border-slate-900" id="femaleCheckbox" />
-//         </label>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default GenderCheckbox;
