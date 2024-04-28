@@ -1,6 +1,4 @@
-Got it! Here's the complete README file content with all the necessary information and commands:
 
-```markdown
 # Chat App
 
 Chat App is a web application that allows users to chat with each other in real-time.
@@ -16,7 +14,6 @@ Chat App is a web application that allows users to chat with each other in real-
 
 - **Frontend**: React.js, React Router, Zustand (state management), Socket.IO Client, Tailwind CSS
 - **Backend**: Node.js, Express.js, MongoDB, Socket.IO
-- **Deployment**: Heroku (backend), Vercel (frontend)
 
 ## Getting Started
 
@@ -59,9 +56,6 @@ Chat App is a web application that allows users to chat with each other in real-
      npm run dev
      ```
 
-6. **Access the Application**:
-
-   Open your web browser and navigate to `http://localhost:3000` to access the application.
 
 ## Commands Used to Run the Project
 
@@ -75,15 +69,5 @@ Chat App is a web application that allows users to chat with each other in real-
   npm run dev
   ```
 
-## Contributing
 
-Contributions are welcome! Feel free to submit pull requests or open issues for any improvements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-```
-
-This README file includes all the necessary information and commands for getting started with the project. Let me know if you need any further adjustments!
