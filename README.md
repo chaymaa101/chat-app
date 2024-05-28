@@ -20,7 +20,7 @@ Chat App is a web application that allows users to chat with each other in real-
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/chat-app.git
+   git clone https://github.com/chaymaa101/chat-app.git
    cd chat-app
    ```
 
