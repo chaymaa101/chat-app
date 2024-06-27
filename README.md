@@ -69,5 +69,5 @@ Chat App is a web application that allows users to chat with each other in real-
   npm run dev
   ```
 
-
+<!-- view source page url -->
 
